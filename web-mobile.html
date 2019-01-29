@@ -6,24 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+      .azulcian {
+        background-color:darkcyan;
+      }
+      .negro{
+        background-color: black;
+      }
+      .azuloscuro{
+        background-color: rgba(219, 63, 43, 0.774);
+      }
+    </style>
 </head>
 <body  >
 
-    <div class="container-fluid-2 pl-0 pr-0">
+    <div class="container-fluid-2 pl-0 pr-0" style="background-color:darkcyan">
       <!-- barra en la cabecera-->
-            <div class="pos-f-t">
+            <div class="pos-f-t" >
+                    
+                    <nav class="navbar navbar-dark bg-dark">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <!-- buscador mas botón-->
+                      <form class="form-inline">
+                        <input class="form-control mr-sm-2 w-auto" type="search" placeholder="Search" aria-label="Search">
+                        <div class="pl-1">
+                        <button class="btn btn-outline-success my-2 my-sm-0 azuloscuro" type="submit"><b>Search</b></button></div>
+                      </form>
+                    </nav>
+                    </div>
+                    <!-- contenido desplegandose hacia abajo de la cabecera-->
                     <div class="collapse" id="navbarToggleExternalContent">
                       <div class="bg-dark p-4">
                         <h5 class="text-white h4">Collapsed content</h5>
                         <span class="text-muted">Toggleable via the navbar brand.</span>
                       </div>
                     </div>
-                    <nav class="navbar navbar-dark bg-dark">
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                    </nav>
-                  </div>
+                    <!-- estas son dos cards-->
+                   
+                    <div class="card w-auto pl-1 pr-1 pt-1 azulcian">
+                      <a href="https://placeholder.com"><img src="https://via.placeholder.com/300x150/red" class="card-img-top" alt="..."></a>
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Card title</b></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary negro">Go somewhere</a>
+                      </div>
+                    </div>
+                    <div class="card w-auto pl-1 pr-1  azulcian">
+                      <a href="https://placeholder.com"><img src="https://via.placeholder.com/300x150/red" class="card-img-top" alt="..."></a>
+                      <div class="card-body">
+                        <h5 class="card-title"><B>Card title</B></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary negro">Go somewhere</a>
+                      </div>
+                    </div>
+                    <!-- Estas son las dos cards-->
     
                     <!-- me indica donde estoy esto va debajo del todo de la pagina-->
                     <div class="fixed-bottom">
