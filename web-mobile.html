@@ -13,9 +13,22 @@
       .negro{
         background-color: black;
       }
-      .azuloscuro{
+      .marron{
         background-color: rgba(219, 63, 43, 0.774);
       }
+      .verde{
+        background-color: green;
+      }
+      .naraja {
+        background-color: orangered;
+      }
+      .azul{
+        background-color: blue;
+      }
+      .blanco{
+        background-color: white;
+      }
+        
     </style>
 </head>
 <body  >
@@ -28,56 +41,119 @@
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
-                      <!-- buscador mas botón-->
-                      <form class="form-inline">
-                        <input class="form-control mr-sm-2 w-auto" type="search" placeholder="Search" aria-label="Search">
-                        <div class="pl-1">
-                        <button class="btn btn-outline-success my-2 my-sm-0 azuloscuro" type="submit"><b>Search</b></button></div>
-                      </form>
-                    </nav>
+                      <!-- Login register and forgot password-->
+                      <!-- https://bootsnipp.com/snippets/X04B0-->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                              Login
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                   <!-- Where all the magic happens --> 
+                                      
+                                        <!-- Main Form -->
+                                        <div class="login-form-1">
+                                          <form id="login-form" class="text-left">
+                                            <div class="login-form-main-message"></div>
+                                            <div class="main-login-form">
+                                              <div class="login-group">
+                                                <div class="form-group">
+                                                  <label for="lg_username" class="sr-only">Usuario</label>
+                                                  <input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="username">
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="lg_password" class="sr-only">contraseña</label>
+                                                  <input type="password" class="form-control" id="lg_password" name="lg_password" placeholder="password">
+                                                </div>
+                                                <div class="form-group login-group-checkbox">
+                                                  <input type="checkbox" id="lg_remember" name="lg_remember">
+                                                  <label for="lg_remember">Recuerdame</label>
+                                                </div>
+                                              </div>
+                                              <button type="submit" class="login-button"><i class="fa fa-chevron-right">Ir</i></button>
+                                            </div><br>
+                                            <div class="etc-login-form">
+                                              <p>¿Olvidastes tu contraseña? <a href="#">click aqui</a></p>
+                                              <p>¿Eres nuevo? <a href="#">Crea una nueva cuenta</a></p>
+                                            </div>
+                                          </form>
+                                        </div>
+                                        <!-- end:Main Form -->
+                                      </div>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+
+
+                      <!-- aqui acaba lo del login-->
+                      
                     </div>
                     <!-- contenido desplegandose hacia abajo de la cabecera-->
                     <div class="collapse" id="navbarToggleExternalContent">
                       <div class="bg-dark p-4">
-                        <h5 class="text-white h4">Collapsed content</h5>
-                        <span class="text-muted">Toggleable via the navbar brand.</span>
+                        <a href="#"><h8 class="text-white h8 ">Europa</h8></a> 
+                        <a href="#"><h8 class="text-white h8 pl-2">Asia</h8></a>
+                        <a href="#"><h8 class="text-white h8 pl-2">America</h8></a>
+                        <a href="#"><h8 class="text-white h8 pl-2 pr-2 pb-1">Africa</h8></a>
+                        <button class="btn azulcian pl-2 pt-1"><a href="#"><h8 class="text-white h8 "><b>Noticias mundiales</b></h8></a></button>
                       </div>
                     </div>
+                 <div class="azulcian">
+                       <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+                       <div style="font-family: gloria hallelujah; text-align: center"><font color="#2E2EFE">
+                        <h2><a><b>Curiosidades</a></h2></font></b>
+                      </div>
                     <!-- estas son dos cards-->
                    
                     <div class="card w-auto pl-1 pr-1 pt-1 azulcian">
-                      <a href="https://placeholder.com"><img src="https://via.placeholder.com/300x150/red" class="card-img-top" alt="..."></a>
+                      <a href="https://noticiascuriosas.com/sabias-que-las-cebras-tienen-rayas-para-evitar-las-picaduras-de-mosquitos/"><img src="img/cebras.jpg" class="card-img-top" alt="..."></a>
                       <div class="card-body">
-                        <h5 class="card-title"><b>Card title</b></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary negro">Go somewhere</a>
+                        <h5 class="card-title"><b>¿Sabías que las cebras tienen rayas para evitar las picaduras de mosquitos?</b></h5>
+                        <p class="card-text">Nos cuentan por qué las cebras tienen rayas aunque nos resulte difícil comprender cómo han evolucionado hasta ellas. Pero algo es algo...</p>
+                        <a href="https://noticiascuriosas.com/sabias-que-las-cebras-tienen-rayas-para-evitar-las-picaduras-de-mosquitos/" class="btn btn-primary negro">Seguir leyendo</a>
                       </div>
                     </div>
                     <div class="card w-auto pl-1 pr-1  azulcian">
-                      <a href="https://placeholder.com"><img src="https://via.placeholder.com/300x150/red" class="card-img-top" alt="..."></a>
+                      <a href="https://noticiascuriosas.com/un-leones-salta-a-la-fama-con-su-dni-y-su-foto-con-un-palillo-en-la-boca/"><img src="img/palillo_dni.jpg" class="card-img-top" alt="..."></a>
                       <div class="card-body">
-                        <h5 class="card-title"><B>Card title</B></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary negro">Go somewhere</a>
+                        <h5 class="card-title"><B>Un leonés salta a la fama con la foto de su DNI con un palillo en la boca</B></h5>
+                        <p class="card-text">Sergio Álvarez, un leonés de 25 años. Asiduo a tener siempre un palillo en la boca, cuando su tía le recordó que se lo quitara para la foto del DNI, su tío y su hermana le desafiaron...</p>
+                        <a href="https://noticiascuriosas.com/un-leones-salta-a-la-fama-con-su-dni-y-su-foto-con-un-palillo-en-la-boca/" class="btn btn-primary negro">Seguir leyendo</a>
                       </div>
                     </div>
-                    <!-- Estas son las dos cards-->
+                    <!-- Estas son las dos cards--></div>
     
-                    <!-- me indica donde estoy esto va debajo del todo de la pagina-->
-                    <div class="fixed-bottom">
-                    <nav aria-label="breadcrumb">
-                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">libreria</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Data</li>
-                      </ol>
-                    </nav>
-                   </div>
+                   
+                   
     </div>
     
     
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script> // oculta barra de navegacion on scroll
+  /*var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}/*
+</script>
 </body>
 </html>
